@@ -101,7 +101,7 @@
 +    BUILD_PACKAGES += automount luci-app-diskman
 +endif
 +ifeq ($(SMALL_FLASH),true)
-+    BUILD_PACKAGES += -coremark -htop -bash -openssh-sftp-server -luci-app-diskman
++    BUILD_PACKAGES += -coremark -htop -bash -openssh-sftp-server -luci-app-diskman -luci-theme-argon
 +	ifeq ($(shell grep -q small_flash $(TOPDIR)/repositories.conf || echo "not_found"),not_found)
 +        $(shell echo "`grep kwrt_kiddin9 $(TOPDIR)/repositories.conf | sed -e 's/kiddin9/small_flash/g'`" >>$(TOPDIR)/repositories.conf)
 +    endif
